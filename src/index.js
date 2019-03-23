@@ -6,10 +6,10 @@ module.exports = function makeExchange(currency) {
     var N = 5;
     var P = 1;
     var money = {
-    };
+        };
     if (currency > 10000) {
         return {error: "You are rich, my friend! We don't have so much coins for exchange"};
-    }
+    };
     while (currency != 0) {
         if (Math.floor(currency / H) > 0) {
             money.H = Math.floor(currency / H);
